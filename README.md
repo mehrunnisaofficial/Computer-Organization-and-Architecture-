@@ -1,228 +1,285 @@
+<div align="center">
+
 # Computer Organization and Architecture (COA)
 
-A collection of my notes and study materials for **Computer Organization and Architecture (COA)**, covering digital components, computer arithmetic, CPU organization, memory, and I/O systems.
+### A visual, structured collection of notes covering digital components, computer arithmetic, CPU organization, memory, and I/O systems.
 
-This repository is primarily based on my college syllabus and is also useful as a reference for understanding how a computer works at the hardware and system level.
+![GitHub repo size](https://img.shields.io/badge/Type-Study%20Notes-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Actively%20Updated-orange?style=for-the-badge)
+![Made by](https://img.shields.io/badge/Made%20by-Mehrunnisa-purple?style=for-the-badge)
 
----
-
-## Topics Covered
-
-### Unit 1: Digital Components
-
-* Overview of Computer Organization
-* Logic Gates
-* Adders
-* Flip-Flops
-* Encoders
-* Decoders
-* Multiplexers
-* Registers
-* Shift Registers
-* Counters
-* RAM
-* ROM
-
-### Unit 2: Data Representation and Computer Arithmetic
-
-* Number Systems
-* ASCII Codes
-* r's Complement
-* (r-1)'s Complement
-* Addition
-* Subtraction
-* Overflow
-* Floating-Point Representation
-* Signed-Magnitude Data
-* Addition and Subtraction with Signed-Magnitude Data
-* Multiplication Algorithm
-* Division Algorithm
-
-### Unit 3: Register Transfer and Micro-operations
-
-* Bus and Memory Transfers
-* Three-State Bus Buffers
-* Binary Adder
-* Binary Incrementer
-* Arithmetic Circuit
-* Logic Micro-operations
-* Shift Micro-operations
-* Arithmetic Logic Unit (ALU)
-
-### Unit 4: Basic Computer Organization
-
-* Instruction Codes
-* Addressing Modes
-* Timing and Control Signals
-* Instruction Cycle
-* Memory-Reference Instructions
-* Input-Output Instructions
-* General Register Organization of CPU
-* Memory Stack
-* One-Address Instructions
-* Two-Address Instructions
-* Software Interrupts
-* Hardware Interrupts
-
-### Unit 5: I/O and Memory Organization
-
-* Input Devices
-* Synchronous Communication
-* Asynchronous Communication
-* Modes of Data Transfer
-* DMA (Direct Memory Access)
-* Memory Hierarchy
-* Main Memory
-* Memory Management
-* Cache Memory
-* Virtual Memory
+</div>
 
 ---
 
-## Repository Structure
+## About
 
-```text
-Computer-Organization-and-Architecture/
-│
-├── Unit-1-Digital-Components/
-│   ├── Logic-Gates/
-│   ├── Adders/
-│   ├── Flip-Flops/
-│   ├── Encoders-Decoders/
-│   ├── Multiplexers/
-│   ├── Registers/
-│   ├── Counters/
-│   └── RAM-ROM/
-│
-├── Unit-2-Data-Representation-and-Arithmetic/
-│   ├── Number-Systems/
-│   ├── Complements/
-│   ├── Addition-and-Subtraction/
-│   ├── Overflow/
-│   ├── Floating-Point/
-│   ├── Signed-Magnitude/
-│   ├── Multiplication/
-│   └── Division/
-│
-├── Unit-3-Register-Transfer-and-Microoperations/
-│   ├── Bus-and-Memory-Transfers/
-│   ├── Arithmetic-Microoperations/
-│   ├── Logic-Microoperations/
-│   ├── Shift-Microoperations/
-│   └── ALU/
-│
-├── Unit-4-Basic-Computer-Organization/
-│   ├── Instruction-Codes/
-│   ├── Addressing-Modes/
-│   ├── Timing-and-Control/
-│   ├── Instruction-Cycle/
-│   ├── CPU-Organization/
-│   ├── Memory-Stack/
-│   └── Interrupts/
-│
-├── Unit-5-IO-and-Memory-Organization/
-│   ├── IO-Devices/
-│   ├── Data-Transfer/
-│   ├── DMA/
-│   ├── Memory-Hierarchy/
-│   ├── Main-Memory/
-│   ├── Cache-Memory/
-│   └── Virtual-Memory/
-│
-├── LICENSE
-└── README.md
+This repository is based on my college syllabus for **Computer Organization and Architecture**, and is meant to help students build a working understanding of how a computer functions — from logic gates to virtual memory.
+
+> **Goal:** Not just definitions — but *how the pieces fit together.*
+
+---
+
+## Syllabus Map
+
+```mermaid
+mindmap
+  root((COA))
+    Unit 1: Digital Components
+      Logic Gates
+      Adders
+      Flip-Flops
+      Encoders / Decoders
+      Multiplexers
+      Registers
+      Counters
+      RAM / ROM
+    Unit 2: Data & Arithmetic
+      Number Systems
+      Complements
+      Addition / Subtraction
+      Overflow
+      Floating Point
+      Multiplication
+      Division
+    Unit 3: Register Transfer
+      Bus & Memory Transfer
+      Arithmetic Micro-ops
+      Logic Micro-ops
+      Shift Micro-ops
+      ALU
+    Unit 4: Basic Computer Org
+      Instruction Codes
+      Addressing Modes
+      Timing & Control
+      Instruction Cycle
+      CPU Organization
+      Memory Stack
+      Interrupts
+    Unit 5: IO & Memory
+      IO Devices
+      Data Transfer
+      DMA
+      Memory Hierarchy
+      Cache Memory
+      Virtual Memory
 ```
 
-The repository structure may evolve as new topics, diagrams, examples, and resources are added.
+---
+
+## How the Instruction Cycle Works
+
+```mermaid
+flowchart LR
+    A[Fetch Instruction] --> B[Decode Instruction]
+    B --> C{Interrupt?}
+    C -- Yes --> D[Handle Interrupt]
+    D --> A
+    C -- No --> E[Execute Instruction]
+    E --> F[Store Result]
+    F --> A
+
+    style A fill:#4f8cff,color:#fff
+    style B fill:#7c4dff,color:#fff
+    style C fill:#ff9800,color:#fff
+    style D fill:#f44336,color:#fff
+    style E fill:#00bcd4,color:#fff
+    style F fill:#4caf50,color:#fff
+```
+
+---
+
+## Memory Hierarchy (Fastest → Slowest)
+
+```mermaid
+flowchart TD
+    R[Registers] --> C[Cache Memory]
+    C --> M[Main Memory / RAM]
+    M --> S[Secondary Storage / Disk]
+    S --> A[Archival / Backup Storage]
+
+    style R fill:#e91e63,color:#fff
+    style C fill:#ff5722,color:#fff
+    style M fill:#ff9800,color:#fff
+    style S fill:#8bc34a,color:#fff
+    style A fill:#607d8b,color:#fff
+```
+
+| Level | Speed | Size | Cost/Bit | Example |
+|---|---|---|---|---|
+| Registers |  Fastest | Smallest |  Highest | CPU registers |
+| Cache | Very Fast | Small | High | L1/L2/L3 cache |
+| Main Memory | Fast | Medium | Medium | RAM |
+| Secondary Storage | Slow | Large | Low | SSD/HDD |
+| Archival |  Slowest | Largest | Lowest | Tape/Cloud backup |
+
+---
+
+## 📚 Topics Covered
+
+<table>
+<tr>
+<th>Unit</th>
+<th>Title</th>
+<th>Key Topics</th>
+</tr>
+<tr>
+<td align="center">1️⃣</td>
+<td><b>Digital Components</b></td>
+<td>Logic Gates, Adders, Flip-Flops, Encoders, Decoders, Multiplexers, Registers, Shift Registers, Counters, RAM, ROM</td>
+</tr>
+<tr>
+<td align="center">2️⃣</td>
+<td><b>Data Representation & Arithmetic</b></td>
+<td>Number Systems, ASCII, r's & (r-1)'s Complement, Overflow, Floating-Point, Signed-Magnitude, Multiplication & Division Algorithms</td>
+</tr>
+<tr>
+<td align="center">3️⃣</td>
+<td><b>Register Transfer & Micro-operations</b></td>
+<td>Bus & Memory Transfers, Three-State Buffers, Binary Adder/Incrementer, Arithmetic Circuit, Logic & Shift Micro-ops, ALU</td>
+</tr>
+<tr>
+<td align="center">4️⃣</td>
+<td><b>Basic Computer Organization</b></td>
+<td>Instruction Codes, Addressing Modes, Timing & Control, Instruction Cycle, Memory-Reference & I/O Instructions, CPU Registers, Memory Stack, Interrupts</td>
+</tr>
+<tr>
+<td align="center">5️⃣</td>
+<td><b>I/O & Memory Organization</b></td>
+<td>Input Devices, Sync/Async Communication, Data Transfer Modes, DMA, Memory Hierarchy, Cache Memory, Virtual Memory</td>
+</tr>
+</table>
+
+---
+
+## 🗂️ Repository Structure
+
+```mermaid
+flowchart TD
+    Root[📁 Computer-Organization-and-Architecture]
+
+    Root --> U1[📁 Unit-1-Digital-Components]
+    U1 --> U1a[Logic Gates]
+    U1 --> U1b[Adders]
+    U1 --> U1c[Flip-Flops]
+    U1 --> U1d[Encoders-Decoders]
+    U1 --> U1e[Multiplexers]
+    U1 --> U1f[Registers / Counters / RAM-ROM]
+
+    Root --> U2[📁 Unit-2-Data-Representation-Arithmetic]
+    U2 --> U2a[Number Systems]
+    U2 --> U2b[Complements]
+    U2 --> U2c[Addition & Subtraction]
+    U2 --> U2d[Overflow / Floating-Point]
+    U2 --> U2e[Multiplication / Division]
+
+    Root --> U3[📁 Unit-3-Register-Transfer-Microoperations]
+    U3 --> U3a[Bus & Memory Transfers]
+    U3 --> U3b[Arithmetic / Logic / Shift Micro-ops]
+    U3 --> U3c[ALU]
+
+    Root --> U4[📁 Unit-4-Basic-Computer-Organization]
+    U4 --> U4a[Instruction Codes / Addressing Modes]
+    U4 --> U4b[Timing & Control / Instruction Cycle]
+    U4 --> U4c[CPU Organization / Memory Stack / Interrupts]
+
+    Root --> U5[📁 Unit-5-IO-and-Memory-Organization]
+    U5 --> U5a[IO Devices / Data Transfer / DMA]
+    U5 --> U5b[Memory Hierarchy / Main Memory]
+    U5 --> U5c[Cache Memory / Virtual Memory]
+
+    Root --> L[📄 LICENSE]
+    Root --> Rd[📄 README.md]
+```
+
+> Structure evolves as new topics, diagrams, and resources are added.
 
 ---
 
 ## Who Is This For?
 
-This repository is mainly for:
-
-* Students studying Computer Organization and Architecture
-* College students following a similar COA syllabus
-* Beginners who want to understand computer hardware and CPU organization
-* Students preparing for COA examinations
-* Anyone looking for organized notes and explanations of fundamental computer architecture concepts
+| Audience | Fits If You... |
+|---|---|
+| Students | Are studying COA in college |
+| Exam Prep | Need organized revision notes |
+| Beginners | Want to understand hardware & CPU basics |
+| Reference Seekers | Want structured, example-driven explanations |
 
 ---
 
-## Learning Approach
+## Content Types Included
 
-The goal of this repository is not just to collect definitions, but to build an understanding of how the different parts of a computer work together.
+```mermaid
+flowchart LR
+    N[Notes] --> E[Explanations]
+    N --> Ex[Examples]
+    N --> D[Diagrams]
+    N --> T[Tables]
+    N --> Al[Algorithms]
+    N --> P[Numerical Problems]
+    N --> Rv[Revision Notes]
+    N --> R[Useful Resources]
 
-The notes may include:
-
-* Explanations
-* Examples
-* Diagrams
-* Tables
-* Algorithms
-* Numerical problems
-* Revision notes
-* Important concepts
-* Useful resources
-
-The content will be expanded and improved as I continue studying COA.
+    style N fill:#3f51b5,color:#fff
+```
 
 ---
 
 ## Contributing
 
-Contributions are welcome.
+```mermaid
+flowchart LR
+    A[Find an Issue] --> B{Type?}
+    B -- Incorrect Explanation --> C[Open Issue]
+    B -- Typo / Formatting --> C
+    B -- Missing Topic --> C
+    B -- Have a Fix --> D[Submit Pull Request]
+    C --> E[Maintainer Reviews]
+    D --> E
+    E --> F[Merged ✅]
 
-If you find:
+    style F fill:#4caf50,color:#fff
+```
 
-* An incorrect explanation
-* A calculation or example that needs correction
-* A typo or formatting issue
-* A missing topic
-* A useful resource that could improve the notes
-
-you can open an **Issue** or submit a **Pull Request**.
-
-Please keep contributions educational, clear, accurate, and relevant to the subject.
+Please keep contributions **educational, clear, accurate, and relevant** to the subject.
 
 ---
 
 ## Author
 
-**Mehrunnisa**
+<div align="center">
 
-Student exploring Computer Science, Python, AI, and systems.
+### **Mehrunnisa**
+*Student exploring Computer Science, Python, AI, and Systems.*
 
----
-
-## Copyright
-
-Copyright © 2026 Mehrunnisa. All rights reserved.
-
-The original notes, explanations, diagrams, examples, and other original content in this repository are created by me unless otherwise stated.
-
-You may view and use this repository for personal and educational purposes. Redistribution, modification, or reuse of substantial portions of the original content should retain the original copyright notice and attribution.
-
-Third-party content, references, or resources remain the property of their respective authors and are subject to their own licenses and terms.
+</div>
 
 ---
 
-## License
+## Copyright & License
 
-This project is licensed under the **MIT License**.
+| | |
+|---|---|
+| **Copyright** | © 2026 Mehrunnisa. All rights reserved. |
+| **License** | MIT License — see [`LICENSE`](./LICENSE) |
+| **Usage** | Free for personal & educational use. Redistribution/reuse of substantial content must retain original attribution. |
+| **Third-Party Content** | Remains property of respective authors, under their own licenses. |
 
-See the `LICENSE` file for the complete license text.
+---
+
+## ⚠️ Disclaimer
+
+> These notes are created for **educational and study purposes**, based on my college syllabus. They are **not** a replacement for textbooks, lectures, or official course material.
 
 ---
 
-## Disclaimer
-
-These notes are created for educational and study purposes and are primarily based on my college syllabus.
-
-They are not intended to replace textbooks, lectures, official course material, or other authoritative sources.
-
----
+<div align="center">
 
 ## Support
 
-If you find this repository useful for learning COA, consider giving it a star on GitHub.
+If this repository helped you learn COA, consider giving it a **star** on GitHub!
+
+![Stars](https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge)
+
+</div>
