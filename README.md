@@ -2,12 +2,12 @@
 
 # Computer Organization and Architecture (COA)
 
-### A visual, structured collection of notes covering digital components, computer arithmetic, CPU organization, memory, and I/O systems.
+### Study notes on digital components, computer arithmetic, CPU organization, memory, and I/O systems.
 
-![GitHub repo size](https://img.shields.io/badge/Type-Study%20Notes-blue?style=for-the-badge)
+![Type](https://img.shields.io/badge/Type-Study%20Notes-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Actively%20Updated-orange?style=for-the-badge)
-![Made by](https://img.shields.io/badge/Made%20by-Mehrunnisa-purple?style=for-the-badge)
+![Author](https://img.shields.io/badge/Author-Mehrunnisa-purple?style=for-the-badge)
 
 </div>
 
@@ -15,13 +15,11 @@
 
 ## About
 
-This repository is based on my college syllabus for **Computer Organization and Architecture**, and is meant to help students build a working understanding of how a computer functions — from logic gates to virtual memory.
-
-> **Goal:** Not just definitions — but *how the pieces fit together.*
+Notes based on my college syllabus for Computer Organization and Architecture, organized by unit and topic for easy reference and revision.
 
 ---
 
-## Syllabus Map
+## Syllabus Overview
 
 ```mermaid
 mindmap
@@ -65,9 +63,10 @@ mindmap
       Cache Memory
       Virtual Memory
 ```
+
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 <table>
 <tr>
@@ -76,27 +75,27 @@ mindmap
 <th>Key Topics</th>
 </tr>
 <tr>
-<td align="center">1️⃣</td>
+<td align="center">1</td>
 <td><b>Digital Components</b></td>
 <td>Logic Gates, Adders, Flip-Flops, Encoders, Decoders, Multiplexers, Registers, Shift Registers, Counters, RAM, ROM</td>
 </tr>
 <tr>
-<td align="center">2️⃣</td>
+<td align="center">2</td>
 <td><b>Data Representation & Arithmetic</b></td>
 <td>Number Systems, ASCII, r's & (r-1)'s Complement, Overflow, Floating-Point, Signed-Magnitude, Multiplication & Division Algorithms</td>
 </tr>
 <tr>
-<td align="center">3️⃣</td>
+<td align="center">3</td>
 <td><b>Register Transfer & Micro-operations</b></td>
 <td>Bus & Memory Transfers, Three-State Buffers, Binary Adder/Incrementer, Arithmetic Circuit, Logic & Shift Micro-ops, ALU</td>
 </tr>
 <tr>
-<td align="center">4️⃣</td>
+<td align="center">4</td>
 <td><b>Basic Computer Organization</b></td>
 <td>Instruction Codes, Addressing Modes, Timing & Control, Instruction Cycle, Memory-Reference & I/O Instructions, CPU Registers, Memory Stack, Interrupts</td>
 </tr>
 <tr>
-<td align="center">5️⃣</td>
+<td align="center">5</td>
 <td><b>I/O & Memory Organization</b></td>
 <td>Input Devices, Sync/Async Communication, Data Transfer Modes, DMA, Memory Hierarchy, Cache Memory, Virtual Memory</td>
 </tr>
@@ -104,13 +103,13 @@ mindmap
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```mermaid
 flowchart TD
-    Root[📁 Computer-Organization-and-Architecture]
+    Root[Computer-Organization-and-Architecture]
 
-    Root --> U1[📁 Unit-1-Digital-Components]
+    Root --> U1[Unit-1-Digital-Components]
     U1 --> U1a[Logic Gates]
     U1 --> U1b[Adders]
     U1 --> U1c[Flip-Flops]
@@ -118,37 +117,35 @@ flowchart TD
     U1 --> U1e[Multiplexers]
     U1 --> U1f[Registers / Counters / RAM-ROM]
 
-    Root --> U2[📁 Unit-2-Data-Representation-Arithmetic]
+    Root --> U2[Unit-2-Data-Representation-Arithmetic]
     U2 --> U2a[Number Systems]
     U2 --> U2b[Complements]
     U2 --> U2c[Addition & Subtraction]
     U2 --> U2d[Overflow / Floating-Point]
     U2 --> U2e[Multiplication / Division]
 
-    Root --> U3[📁 Unit-3-Register-Transfer-Microoperations]
+    Root --> U3[Unit-3-Register-Transfer-Microoperations]
     U3 --> U3a[Bus & Memory Transfers]
     U3 --> U3b[Arithmetic / Logic / Shift Micro-ops]
     U3 --> U3c[ALU]
 
-    Root --> U4[📁 Unit-4-Basic-Computer-Organization]
+    Root --> U4[Unit-4-Basic-Computer-Organization]
     U4 --> U4a[Instruction Codes / Addressing Modes]
     U4 --> U4b[Timing & Control / Instruction Cycle]
     U4 --> U4c[CPU Organization / Memory Stack / Interrupts]
 
-    Root --> U5[📁 Unit-5-IO-and-Memory-Organization]
+    Root --> U5[Unit-5-IO-and-Memory-Organization]
     U5 --> U5a[IO Devices / Data Transfer / DMA]
     U5 --> U5b[Memory Hierarchy / Main Memory]
     U5 --> U5c[Cache Memory / Virtual Memory]
 
-    Root --> L[📄 LICENSE]
-    Root --> Rd[📄 README.md]
+    Root --> L[LICENSE]
+    Root --> Rd[README.md]
 ```
-
-> Structure evolves as new topics, diagrams, and resources are added.
 
 ---
 
-## Who Is This For?
+## Who Is This For
 
 | Audience | Fits If You... |
 |---|---|
@@ -156,24 +153,6 @@ flowchart TD
 | Exam Prep | Need organized revision notes |
 | Beginners | Want to understand hardware & CPU basics |
 | Reference Seekers | Want structured, example-driven explanations |
-
----
-
-## Content Types Included
-
-```mermaid
-flowchart LR
-    N[Notes] --> E[Explanations]
-    N --> Ex[Examples]
-    N --> D[Diagrams]
-    N --> T[Tables]
-    N --> Al[Algorithms]
-    N --> P[Numerical Problems]
-    N --> Rv[Revision Notes]
-    N --> R[Useful Resources]
-
-    style N fill:#3f51b5,color:#fff
-```
 
 ---
 
@@ -188,12 +167,12 @@ flowchart LR
     B -- Have a Fix --> D[Submit Pull Request]
     C --> E[Maintainer Reviews]
     D --> E
-    E --> F[Merged ✅]
+    E --> F[Merged]
 
     style F fill:#4caf50,color:#fff
 ```
 
-Please keep contributions **educational, clear, accurate, and relevant** to the subject.
+Please keep contributions educational, clear, accurate, and relevant to the subject.
 
 ---
 
@@ -201,8 +180,8 @@ Please keep contributions **educational, clear, accurate, and relevant** to the 
 
 <div align="center">
 
-### **Mehrunnisa**
-*Student exploring Computer Science, Python, AI, and Systems.*
+**Mehrunnisa**
+Student exploring Computer Science, Python, AI, and Systems.
 
 </div>
 
@@ -219,18 +198,16 @@ Please keep contributions **educational, clear, accurate, and relevant** to the 
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
-> These notes are created for **educational and study purposes**, based on my college syllabus. They are **not** a replacement for textbooks, lectures, or official course material.
+These notes are created for educational and study purposes, based on my college syllabus. They are not a replacement for textbooks, lectures, or official course material.
 
 ---
 
 <div align="center">
 
-## Support
+### Support
 
-If this repository helped you learn COA, consider giving it a **star** on GitHub!
-
-![Stars](https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge)
+If this repository helped you learn COA, consider giving it a star on GitHub.
 
 </div>
