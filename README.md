@@ -48,5 +48,4 @@ The content of this repository may not be reproduced, redistributed, or republis
 ## ♡ Author
 
 **Mehrunnisa**
-
-> *Learning the machine, one layer at a time.*
+---
