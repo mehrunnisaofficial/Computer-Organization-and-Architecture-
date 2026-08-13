@@ -180,7 +180,7 @@ Please keep contributions educational, clear, accurate, and relevant to the subj
 
 <div align="center">
 
-**Mehrunnisa**
+**Mehrunnisa**  
 Student exploring Computer Science, Python, AI, and Systems.
 
 </div>
