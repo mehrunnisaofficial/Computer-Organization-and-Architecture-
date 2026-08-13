@@ -65,55 +65,6 @@ mindmap
       Cache Memory
       Virtual Memory
 ```
-
----
-
-## How the Instruction Cycle Works
-
-```mermaid
-flowchart LR
-    A[Fetch Instruction] --> B[Decode Instruction]
-    B --> C{Interrupt?}
-    C -- Yes --> D[Handle Interrupt]
-    D --> A
-    C -- No --> E[Execute Instruction]
-    E --> F[Store Result]
-    F --> A
-
-    style A fill:#4f8cff,color:#fff
-    style B fill:#7c4dff,color:#fff
-    style C fill:#ff9800,color:#fff
-    style D fill:#f44336,color:#fff
-    style E fill:#00bcd4,color:#fff
-    style F fill:#4caf50,color:#fff
-```
-
----
-
-## Memory Hierarchy (Fastest → Slowest)
-
-```mermaid
-flowchart TD
-    R[Registers] --> C[Cache Memory]
-    C --> M[Main Memory / RAM]
-    M --> S[Secondary Storage / Disk]
-    S --> A[Archival / Backup Storage]
-
-    style R fill:#e91e63,color:#fff
-    style C fill:#ff5722,color:#fff
-    style M fill:#ff9800,color:#fff
-    style S fill:#8bc34a,color:#fff
-    style A fill:#607d8b,color:#fff
-```
-
-| Level | Speed | Size | Cost/Bit | Example |
-|---|---|---|---|---|
-| Registers |  Fastest | Smallest |  Highest | CPU registers |
-| Cache | Very Fast | Small | High | L1/L2/L3 cache |
-| Main Memory | Fast | Medium | Medium | RAM |
-| Secondary Storage | Slow | Large | Low | SSD/HDD |
-| Archival |  Slowest | Largest | Lowest | Tape/Cloud backup |
-
 ---
 
 ## 📚 Topics Covered
