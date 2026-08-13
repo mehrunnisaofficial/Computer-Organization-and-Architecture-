@@ -1,51 +1,69 @@
-# ♜ Computer Organization & Architecture
+<div align="center">
 
-> **A structured collection of notes covering the fundamental concepts of Computer Organization & Architecture.**
+<h1>Computer Organization and Architecture</h1>
+<p><i>Personal study notes on digital components, computer arithmetic, CPU organization, memory, and I/O systems.</i></p>
 
----
+<img src="https://img.shields.io/badge/status-active-8A2BE2?style=flat-square" />
+<img src="https://img.shields.io/badge/license-MIT-8A2BE2?style=flat-square" />
+<img src="https://img.shields.io/badge/made%20by-Mehrunnisa-8A2BE2?style=flat-square" />
 
-## ◈ What This Repository Covers
+<br />
 
-This repository covers **5 core units** of Computer Organization & Architecture, progressing from digital components and data representation to CPU organization, I/O, and memory systems.
+</div>
 
-### 🜲 Unit 01 · Digital Components
+<br />
 
-Logic gates · Adders · Flip-Flops · Encoders · Decoders · Multiplexers · Registers · Shift Registers · Counters · RAM · ROM
+## Overview
 
-### 🜲 Unit 02 · Data Representation & Computer Arithmetic
+A structured set of notes based on my college syllabus, organized unit-by-unit for quick reference and revision.
 
-Number Systems · ASCII Codes · r's & (r−1)'s Complements · Addition & Subtraction · Overflow · Floating-Point Representation · Signed-Magnitude Arithmetic · Multiplication & Division Algorithms
+<br />
 
-### 🜲 Unit 03 · Register Transfer & Micro-operations
+## Contents
 
-Bus & Memory Transfers · Three-State Bus Buffers · Binary Adder · Binary Incrementer · Arithmetic Circuit · Logic & Shift Micro-operations · ALU
+| Unit | Topic |
+|:---:|---|
+| 01 | Digital Components |
+| 02 | Data Representation & Computer Arithmetic |
+| 03 | Register Transfer & Micro-operations |
+| 04 | Basic Computer Organization |
+| 05 | I/O and Memory Organization |
 
-### 🜲 Unit 04 · Basic Computer Organization
+<br />
 
-Instruction Codes · Addressing Modes · Timing & Control · Instruction Cycle · Memory Reference Instructions · I/O Instructions · CPU Register Organization · Memory Stack · One-Address & Two-Address Instructions · Software & Hardware Interrupts
+## Structure
 
-### 🜲 Unit 05 · I/O & Memory Organization
+```
+Computer-Organization-and-Architecture
+├── Unit-1-Digital-Components
+├── Unit-2-Data-Representation-and-Arithmetic
+├── Unit-3-Register-Transfer-and-Microoperations
+├── Unit-4-Basic-Computer-Organization
+├── Unit-5-IO-and-Memory-Organization
+├── LICENSE
+└── README.md
+```
 
-Input Devices · Synchronous & Asynchronous Communication · I/O Data Transfer · DMA · Memory Hierarchy · Main Memory · Memory Management · Cache Memory · Virtual Memory
+<br />
 
----
+## Who this is for
 
-## ⚜️ Disclaimer
+Students, self-learners, and anyone revising Computer Organization and Architecture who wants clean, organized notes rather than a scattered set of files.
 
-This repository is created for **educational and personal learning purposes**.
-The notes are intended to support understanding and revision and may contain simplified explanations or interpretations.
+<br />
 
----
+## Contributing
 
-## © Copyright
+Found an error, typo, or missing topic? Open an issue or submit a pull request. Keep contributions clear, accurate, and relevant.
 
-© 2026 **Mehrunnisa**. All rights reserved.
+<br />
 
-The content of this repository may not be reproduced, redistributed, or republished without appropriate permission or attribution.
+## License
 
----
+Licensed under the [MIT License](./LICENSE). © 2026 Mehrunnisa.
 
-## ♡ Author
+<br />
 
-**Mehrunnisa**
----
+<div align="center">
+<sub>If these notes helped you, consider starring the repo.</sub>
+</div>
