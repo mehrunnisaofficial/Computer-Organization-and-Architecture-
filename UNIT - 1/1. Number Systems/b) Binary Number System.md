@@ -1,4 +1,9 @@
-# Binary Number System 
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Times+New+Roman&weight=700&size=45&duration=2100&pause=800&color=E1DCC9&center=true&vCenter=true&width=900&lines=Binary+Number+System+%E2%9A%9E%5E.+.%5E%E2%9A%9F" alt="Binary Number System"/>
+
+</div>
+
 ### *Computer Organization and Architecture (COA) — Study Notes by Mehrunnisa*
 
 Alright, file #2. Last time we met the whole squad of number systems as strangers. Now it's time to properly sit down with the main character of COA — **binary**. Everything your computer has ever done, is doing right now, or will ever do, traces back to this system. No pressure or anything.
@@ -616,33 +621,36 @@ Try these before checking the answers below — no peeking! 👀
 
 ## 20. End Concept Map
 
+ 
 ```mermaid
-flowchart TD
-    Root["Binary Number System"] --> Basics["Digits: 0,1 — Base 2"]
-    Root --> PV["Place Values<br/>powers of 2"]
-    Root --> Rep["Representation<br/>Σ(bit × 2ᵖᵒˢⁱᵗⁱᵒⁿ)"]
-    Root --> Conv["Conversions"]
-    Root --> Arith["Arithmetic"]
-    Root --> Frac["Binary Fractions"]
-    Root --> Uses["Uses in Computers"]
-
-    Conv --> C1["→ Decimal"]
-    Conv --> C2["→ Octal (groups of 3)"]
-    Conv --> C3["→ Hex (groups of 4)"]
-
-    Arith --> A1["Addition"]
-    Arith --> A2["Subtraction"]
-    Arith --> A3["Multiplication"]
-    Arith --> A4["Division"]
-
-    Frac --> F1["→ Decimal"]
-    Frac --> F2["→ Octal"]
-    Frac --> F3["→ Hex"]
-
-    Uses --> U1["Hardware / Transistors"]
-    Uses --> U2["Memory & Storage"]
-    Uses --> U3["Data Representation"]
+mindmap
+  root((Binary<br/>Number<br/>System))
+    (Basics)
+      Digits 0 and 1
+      Base 2
+    (Place Values)
+      powers of 2
+    (Representation)
+      Σ bit × 2^position
+    (Conversions)
+      To Decimal
+      To Octal groups of 3
+      To Hex groups of 4
+    (Arithmetic)
+      Addition
+      Subtraction
+      Multiplication
+      Division
+    (Binary Fractions)
+      To Decimal
+      To Octal
+      To Hex
+    (Uses in Computers)
+      Hardware / Transistors
+      Memory and Storage
+      Data Representation
 ```
+
 
 That's the full binary picture — from "just two digits" to full arithmetic, fractions, and conversions across every major number system. Every single rule here comes back to one thing: **powers of 2, doubling each step.** Hold onto that pattern — Decimal, Octal, and Hex are all coming up next, and they'll each get the same deep-dive treatment.
 
