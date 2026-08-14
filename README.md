@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=900&size=32&duration=3000&pause=1000&color=ECDFCC&center=true&vCenter=true&width=900&lines=Computer+Organization+%26+Architecture" alt="Computer Organization and Architecture" />
+<img src="https://readme-typing-svg.demolab.com?font=Brush+Script+MT&weight=900&size=100&duration=3000&pause=1000&color=697565&center=true&vCenter=true&width=1500&height=100&lines=Computer+Organization+%26+Architecture" alt="Computer Organization and Architecture" />
 
 <p><i>Personal study notes on digital components, computer arithmetic, CPU organization, memory, and I/O systems.</i></p>
 
@@ -81,5 +81,5 @@ Computer-Organization-and-Architecture
 </p>
 
 <div align="center">
-<sub>If these notes helped you, consider starring the repo ⭐</sub>
+<sub><i>If these notes helped you, consider starring the repo ⭐</i></sub>
 </div>
