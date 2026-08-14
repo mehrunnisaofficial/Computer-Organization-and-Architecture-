@@ -1,37 +1,44 @@
 <div align="center">
 
-<h1>Computer Organization and Architecture</h1>
+<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=900&size=32&duration=3000&pause=1000&color=ECDFCC&center=true&vCenter=true&width=900&lines=Computer+Organization+%26+Architecture" alt="Computer Organization and Architecture" />
+
 <p><i>Personal study notes on digital components, computer arithmetic, CPU organization, memory, and I/O systems.</i></p>
 
-<img src="https://img.shields.io/badge/status-active-8A2BE2?style=flat-square" />
-<img src="https://img.shields.io/badge/license-MIT-8A2BE2?style=flat-square" />
-<img src="https://img.shields.io/badge/made%20by-Mehrunnisa-8A2BE2?style=flat-square" />
-
-<br />
+<img src="https://img.shields.io/badge/status-active-697565?style=for-the-badge" />
+<img src="https://img.shields.io/badge/license-MIT-697565?style=for-the-badge" />
+<img src="https://img.shields.io/badge/made%20by-Mehrunnisa-697565?style=for-the-badge" />
 
 </div>
 
-<br />
+<br/>
 
-## Overview
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=3C3D37" width="100%"/>
+</p>
 
-A structured set of notes based on my college syllabus, organized unit-by-unit for quick reference and revision.
+## ᨳଓ Overview
 
-<br />
+A structured, unit-wise collection of notes covering Computer Organization and Architecture (COA), based on my college syllabus. It brings together key concepts, explanations, and topics in one place for learning, quick reference, and revision.
 
-## Contents
+<br/>
+
+## ᨳଓ Contents
+
+<div align="center">
 
 | Unit | Topic |
-|:---:|---|
-| 01 | Digital Components |
-| 02 | Data Representation & Computer Arithmetic |
-| 03 | Register Transfer & Micro-operations |
-| 04 | Basic Computer Organization |
-| 05 | I/O and Memory Organization |
+|:---:|:---|
+| `01` | Digital Components |
+| `02` | Data Representation & Computer Arithmetic |
+| `03` | Register Transfer & Micro-operations |
+| `04` | Basic Computer Organization |
+| `05` | I/O and Memory Organization |
 
-<br />
+</div>
 
-## Structure
+<br/>
+
+## ᨳଓ Structure
 
 ```
 Computer-Organization-and-Architecture
@@ -44,26 +51,35 @@ Computer-Organization-and-Architecture
 └── README.md
 ```
 
-<br />
+<br/>
 
-## Who this is for
+## ᨳଓ Who this is for
 
-Students, self-learners, and anyone revising Computer Organization and Architecture who wants clean, organized notes rather than a scattered set of files.
+* Students following a **Computer Organization and Architecture** syllabus.
+* Self-learners looking for **clean, structured notes**.
+* Anyone revising key concepts through **unit-wise explanations and quick references**.
 
-<br />
+<br/>
 
-## Contributing
+## ᨳଓ Contributing
 
-Found an error, typo, or missing topic? Open an issue or submit a pull request. Keep contributions clear, accurate, and relevant.
+* Report errors, typos, or missing topics through an **issue**.
+* Submit improvements through a **pull request**.
+* Keep contributions **clear, accurate, and relevant**.
 
-<br />
+<br/>
 
-## License
+## ᨳଓ License
 
-Licensed under the [MIT License](./LICENSE). © 2026 Mehrunnisa.
+* Licensed under the **[MIT License](./LICENSE)**.
+* © 2026 **Mehrunnisa**. All rights reserved.
 
-<br />
+<br/>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=3C3D37" width="100%"/>
+</p>
 
 <div align="center">
-<sub>If these notes helped you, consider starring the repo.</sub>
+<sub>If these notes helped you, consider starring the repo ⭐</sub>
 </div>
