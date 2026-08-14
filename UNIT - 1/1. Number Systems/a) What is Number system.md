@@ -1,5 +1,9 @@
+<div align="center">
 
-# What is a Number System? 
+<img src="https://readme-typing-svg.demolab.com?font=Times+New+Roman&weight=700&size=45&duration=2200&pause=800&color=E1DCC9&center=true&vCenter=true&width=900&lines=What+is+a+Number+System%3F+%28%E2%95%A5%EF%B9%8F%E2%95%A5%29" alt="What is a Number System?"/>
+
+</div>
+
 ### *Computer Organization and Architecture (COA) — Study Notes by Mehrunnisa*
 
 Alright, welcome to file #1 of COA. Before we touch binary, hex, logic gates, or any of the scary-sounding stuff — we need to zoom all the way out and answer one dumb-simple question: **what even IS a number system?**
@@ -327,20 +331,27 @@ Try these before checking the answers below — no cheating, I'll know 👀
 ## 11. End Concept Map
 
 ```mermaid
-flowchart TD
-    Root["Number System"] --> Base["Base / Radix<br/>how many digits exist"]
-    Root --> Digits["Digits<br/>0 to (base−1)"]
-    Root --> PN["Positional Notation<br/>position decides value"]
-    Root --> PW["Positional Weight<br/>baseᵖᵒˢⁱᵗⁱᵒⁿ"]
-    Root --> GR["General Representation<br/>Σ(digit × baseᵖᵒˢⁱᵗⁱᵒⁿ)"]
-    Root --> IF["Integer & Fractional Parts<br/>split at the point"]
-    Root --> CS["Common Number Systems"]
-    Root --> Why["Why It Matters<br/>hardware only knows on/off"]
-
-    CS --> Dec["Decimal (10)"]
-    CS --> Bin["Binary (2)"]
-    CS --> Oct["Octal (8)"]
-    CS --> Hex["Hex (16)"]
+mindmap
+  root((Number<br/>System))
+    (Base / Radix)
+      how many digits exist
+    (Digits)
+      0 to base−1
+    (Positional Notation)
+      position decides value
+    (Positional Weight)
+      base^position
+    (General Representation)
+      Σ digit × base^position
+    (Integer & Fractional Parts)
+      split at the point
+    (Common Number Systems)
+      Decimal 10
+      Binary 2
+      Octal 8
+      Hex 16
+    (Why It Matters)
+      hardware only knows on/off
 ```
 
 That's the full picture — from "what even is a number system" all the way to "why computers are obsessed with binary." Nothing here was memorized for the sake of it; every rule traced back to one core idea: **position = power of the base.** Hold onto that, it's about to carry you through every number system file coming up.
@@ -364,7 +375,13 @@ We will **not** be jumping into conversions, Boolean algebra, logic gates, compl
 
 ⋆˚꩜｡
 
-### Follow Me
+</div>
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Times+New+Roman&weight=700&size=45&duration=1800&pause=700&color=E1DCC9&center=true&vCenter=true&width=600&lines=FOLLOW+ME" alt="Follow Me"/>
+
+</div>
 
 If you enjoyed these notes, you'll probably enjoy the rest too.
 
@@ -373,6 +390,7 @@ If you enjoyed these notes, you'll probably enjoy the rest too.
 | Instagram | @mehrunnisa.ai |
 | SubStack | The Epoch |
 | YouTube | @mehrunnisa.ai |
+
 
 **Usage Terms**
 These notes are free to use for personal learning, revision, and study. Please do not:
